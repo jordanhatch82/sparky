@@ -1,0 +1,25 @@
+web1:
+    name: annalee
+    document_root: app/webroot
+    shared_writable_dirs:
+        - app/tmp/cache
+        - app/tmp/logs
+        - app/tmp/sessions
+        - app/tmp/tests
+        - app/tmp
+    php_extensions:
+        - mcrypt
+        - apc
+        - pdo_mysql
+        - mysqli
+        - mbstring
+        - curl
+    php_max_execution_time: 500
+    apache_access_log: false
+    apache_error_log: true
+    php_error_log: true
+    php_fpm_log: true
+    php_error_reporting: 30719
+db1:
+    name: sortingtool
+    type: mysql

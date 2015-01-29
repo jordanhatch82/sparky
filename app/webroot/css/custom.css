@@ -1,0 +1,9 @@
+div#eventCount{
+    width: 400px;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+span#count{
+    font-size: 20px;
+}
